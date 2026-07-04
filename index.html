@@ -16,40 +16,28 @@
   @media (prefers-color-scheme: light){
     body{ background:#f6f7f9; color:#1a1c20; }
     .card{ background:#fff; box-shadow:0 8px 30px rgba(0,0,0,.08); }
-    a.tile{ background:#f2f4f7; }
-    a.tile:hover{ background:#e9edf3; }
   }
   .card{
-    width:min(560px,92vw); padding:40px 36px; border-radius:18px;
-    background:#171a21;
+    width:min(480px,92vw); padding:48px 40px; border-radius:18px;
+    background:#171a21; text-align:center;
   }
-  h1{ margin:0 0 4px; font-size:26px; letter-spacing:-.02em; }
-  p.sub{ margin:0 0 28px; opacity:.6; font-size:15px; }
-  .grid{ display:grid; gap:12px; }
-  a.tile{
-    display:block; padding:16px 18px; border-radius:12px;
-    background:#20242e; color:inherit; text-decoration:none;
-    transition:background .15s ease;
+  h1{ margin:0 0 6px; font-size:28px; letter-spacing:-.02em; }
+  p.sub{ margin:0 0 32px; opacity:.6; font-size:15px; }
+  a.btn{
+    display:inline-block; padding:16px 32px; border-radius:12px;
+    background:#3b82f6; color:#fff; text-decoration:none;
+    font-size:17px; font-weight:600;
+    transition:background .15s ease, transform .05s ease;
   }
-  a.tile:hover{ background:#282d39; }
-  a.tile b{ display:block; font-size:16px; margin-bottom:2px; }
-  a.tile span{ font-size:13px; opacity:.6; }
+  a.btn:hover{ background:#2f6fe0; }
+  a.btn:active{ transform:translateY(1px); }
 </style>
 </head>
 <body>
   <main class="card">
     <h1>kmarkov563</h1>
     <p class="sub">Личные проекты</p>
-    <div class="grid">
-      <a class="tile" href="/sport_bb/">
-        <b>🏋️ Sport BB</b>
-        <span>Тренировочная программа — текущий блок</span>
-      </a>
-      <a class="tile" href="/sport_bb/razbor.html">
-        <b>📊 Разбор цикла 8</b>
-        <span>Дашборд и аудит прошлой программы</span>
-      </a>
-    </div>
+    <a class="btn" href="https://kmarkov563.github.io/sport/">🏋️ Открыть Sport BB</a>
   </main>
 </body>
 </html>
