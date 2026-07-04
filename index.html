@@ -1,1 +1,55 @@
-hello
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kmarkov563</title>
+<style>
+  :root{ color-scheme: light dark; }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; min-height:100vh;
+    display:flex; align-items:center; justify-content:center;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:#0f1115; color:#e8eaed;
+  }
+  @media (prefers-color-scheme: light){
+    body{ background:#f6f7f9; color:#1a1c20; }
+    .card{ background:#fff; box-shadow:0 8px 30px rgba(0,0,0,.08); }
+    a.tile{ background:#f2f4f7; }
+    a.tile:hover{ background:#e9edf3; }
+  }
+  .card{
+    width:min(560px,92vw); padding:40px 36px; border-radius:18px;
+    background:#171a21;
+  }
+  h1{ margin:0 0 4px; font-size:26px; letter-spacing:-.02em; }
+  p.sub{ margin:0 0 28px; opacity:.6; font-size:15px; }
+  .grid{ display:grid; gap:12px; }
+  a.tile{
+    display:block; padding:16px 18px; border-radius:12px;
+    background:#20242e; color:inherit; text-decoration:none;
+    transition:background .15s ease;
+  }
+  a.tile:hover{ background:#282d39; }
+  a.tile b{ display:block; font-size:16px; margin-bottom:2px; }
+  a.tile span{ font-size:13px; opacity:.6; }
+</style>
+</head>
+<body>
+  <main class="card">
+    <h1>kmarkov563</h1>
+    <p class="sub">Личные проекты</p>
+    <div class="grid">
+      <a class="tile" href="/sport_bb/">
+        <b>🏋️ Sport BB</b>
+        <span>Тренировочная программа — текущий блок</span>
+      </a>
+      <a class="tile" href="/sport_bb/razbor.html">
+        <b>📊 Разбор цикла 8</b>
+        <span>Дашборд и аудит прошлой программы</span>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
